@@ -1,20 +1,20 @@
-LABORATORIO
+Recepcionista
 id                   INTEGER        PK
 nome                 VARCHAR (60) NOT NULL
 bloco                CHAR (1)
 
-PROFESSOR
+Hospede
 id                   INTEGER        PK
 nome                 VARCHAR (120) NOT NULL
 email                VARCHAR (120) UNIQUE
 
-EQUIPAMENTO
+Quartos
 id                   INTEGER        PK
 descricao            VARCHAR (120) NOT NULL
 patrimonio           VARCHAR (20) UNIQUE
 id_laboratorio       INTEGER        FK -> LABORATORIO.id
  
-EMPRESTIMO <- a associativa
+Faxineira                          <- a associativa
 id                   INTEGER        PK
 id_professor         INTEGER        FK -> PROFESSOR.id
 id_equipamento       INTEGER        FK -> EQUIPAMENTO.id
