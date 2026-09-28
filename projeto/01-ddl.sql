@@ -1,22 +1,19 @@
 Recepcionista
 id                   INTEGER        PK
-nome                 VARCHAR (60) NOT NULL
-bloco                CHAR (1)
+nome                 VARCHAR (60)
+receber_pagamento    INTEGER
 
 Hospede
 id                   INTEGER        PK
-nome                 VARCHAR (120) NOT NULL
+nome                 VARCHAR (120)
 email                VARCHAR (120) UNIQUE
 
 Quartos
 id                   INTEGER        PK
 descricao            VARCHAR (120) NOT NULL
-patrimonio           VARCHAR (20) UNIQUE
-id_laboratorio       INTEGER        FK -> LABORATORIO.id
+id_reserva           INTEGER FK
  
-Faxineira                          <- a associativa
+Reserva              
 id                   INTEGER        PK
-id_professor         INTEGER        FK -> PROFESSOR.id
-id_equipamento       INTEGER        FK -> EQUIPAMENTO.id
-data_saida           DATE NOT NULL
-data_devolucao       DATE           <- vazio = ainda esta com ele
+data_entrada         DATE
+data_saida           DATE
