@@ -1,19 +1,20 @@
 Recepcionista
-id                   INTEGER        PK
-nome                 VARCHAR (60)
-receber_pagamento    INTEGER
+id                   INT            PRIMARY KEY
+nome                 VARCHAR (60)   NOT NULL
+receber_pagamento    INT
+id_reserva           INT            FOREIGN KEY
 
 Hospede
-id                   INTEGER        PK
-nome                 VARCHAR (120)
-email                VARCHAR (120) UNIQUE
+id                   INT            PRIMARY KEY
+nome                 VARCHAR (120)  NOT NULL
+email                VARCHAR (120)  UNIQUE
 
 Quartos
-id                   INTEGER        PK
-descricao            VARCHAR (120) NOT NULL
-id_reserva           INTEGER FK
+id                   INT            PRIMARY KEY
+descricao            VARCHAR (120)  NOT NULL
+id_reserva           INT            FOREIGN KEY
  
 Reserva              
-id                   INTEGER        PK
+id                   INT            PRIMARY KEY
 data_entrada         DATE
 data_saida           DATE
