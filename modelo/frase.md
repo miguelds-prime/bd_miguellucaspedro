@@ -10,8 +10,9 @@
 
 > _Escreva aqui o que o sistema controla, em uma frase, sem a palavra "sistema"._
 >
-> Exemplo: a secretaria precisa saber qual aluno está inscrito em qual
-> modalidade esportiva, desde quando, e se a inscrição ainda vale.
+> Lucas: O Hospede faz uma Reserva
+> Miguel: Uma reserva pode conter 1 ou mais quartos
+> Pedro: nada por enquanto
 
 ## As entidades
 
@@ -29,3 +30,4 @@ Qual é o par de entidades que se cruza muitos-para-muitos, e qual dado nasce
 **do encontro** entre elas (e não de nenhum dos dois lados)?
 
 -
+Frase: O Hospede faz uma Reserva
