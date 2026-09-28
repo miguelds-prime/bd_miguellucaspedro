@@ -30,4 +30,3 @@ Qual é o par de entidades que se cruza muitos-para-muitos, e qual dado nasce
 **do encontro** entre elas (e não de nenhum dos dois lados)?
 
 -
-Frase: O Hospede faz uma Reserva
