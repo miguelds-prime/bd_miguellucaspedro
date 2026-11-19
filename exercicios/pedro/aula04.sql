@@ -87,12 +87,11 @@ SELECT * FROM INSCRICAO WHERE situacao = 'ativa' AND data >= '2026-09-01';
 
 
 -- ex9
--- Pergunta 1: Quais produtos têm preço entre R$ 20,00 e R$ 100,00, ordenados do mais barato para o mais caro?
--- SELECT nome, preco, estoque FROM produto WHERE preco BETWEEN 20.00 AND 100.00 ORDER BY preco ASC;
+-- Pergunta 1: Quais quartos têm valor de diária entre R$ 150,00 e R$ 350,00, ordenados do mais barato para o mais caro?
+-- SELECT numero, tipo, capacidade, diaria FROM QUARTO WHERE diaria BETWEEN 150.00 AND 350.00 ORDER BY diaria ASC;
 
--- Pergunta 2: Quais clientes cadastrados ainda não têm número de telefone registrado?
--- SELECT id, nome, cpf FROM cliente WHERE telefone IS NULL;
+-- Pergunta 2: Quais reservas ainda não têm data de saída definida (hóspedes que ainda não fecharam a estadia) e estão com status 'ativa' ou 'confirmada'?
+-- SELECT id, id_hospede, id_quarto, data_entrada, status FROM RESERVA WHERE data_saida IS NULL AND status IN ('ativa', 'confirmada');
 
--- Pergunta 3: Quais funcionários ocupam os cargos de 'Caixa' ou 'Gerente' e têm o nome começando com a letra 'A'?
--- SELECT nome, cargo FROM funcionario WHERE cargo IN ('Caixa', 'Gerente') AND nome LIKE 'A%' ORDER BY nome;
-
+-- Pergunta 3: Quais hóspedes têm o sobrenome "Silva" em qualquer parte do nome, listados em ordem alfabética?
+-- SELECT id, nome, documento, telefone FROM HOSPEDE WHERE nome LIKE '%Silva%' ORDER BY nome ASC;
